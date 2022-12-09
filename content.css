@@ -38,7 +38,8 @@ hr {
 .container {
     margin: 10% 10%;
     text-align: center;
-    background-color: red;
+    border: solid;
+    border-radius: 10px;
 }
 
 .sidebar {
@@ -65,14 +66,22 @@ hr {
 
 .contact-info{
     display: flex;
-    align-items: center;
     margin-right: 5%;
-    text-align: center;
-    justify-content: center;
+    padding-bottom: 5%;
 }
 
 .icon-box {
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.contact-item {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
 }
