@@ -1,6 +1,7 @@
 body {
     font-family: Martian Mono, sans-serif;
-    background-image: url(../images/Hexagons.jpg);
+    /*background-image: url(../images/Hexagons.jpg);*/
+    background-color: grey;
 }
 
 div {
