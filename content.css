@@ -1,12 +1,25 @@
 body {
     font-family: Martian Mono, sans-serif;
     /*background-image: url(../images/Hexagons.jpg);*/
-    background-color: grey;
+    background: linear-gradient(#E5E5CB 10%,#D5CEA3, #3C2A21);
+    color: #E5E5CB;
 }
 
 div {
     display: block;
+    border: dashed 3px blue;
 
+}
+section {
+    border: dashed 5px orange;
+    display: block;
+    background-color: #3C2A21;
+}
+section:nth-child(odd) {
+    background-color: #4E3636;
+}
+nav {
+    position: sticky;
 }
 
 nav ul {
@@ -21,7 +34,6 @@ nav ul {
 }
 
 nav li {
-    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -43,17 +55,26 @@ hr {
     border: none;
 }
 
-.flex-container {
-    display: flex;
+button {
+    margin: 0 auto;
 }
 
-.container {
-    margin: 10% 5%;
-    text-align: center;
-    border: solid;
-    border-color: white;
-    border-radius: 10px;
-    color: white;
+.wrapper {
+    border: 2px dashed cyan;
+    margin: 2% 5%;
+}
+
+.flex-container {
+    display: flex;
+    border: dashed red 2px;
+}
+
+.main-container {
+    margin: 5% 5% 5% 0;
+    padding: 250px 0 0 0;
+    text-align: left;
+    flex: 70%;
+    height: 500px;
 }
 
 .sub-container {
@@ -65,16 +86,18 @@ hr {
     background-color: red;
 }
 
-.sidebar {
-    flex: 30%;
-}
-
-.main {
-    flex: 70%;
+.button {
+    display: block;
+    background-color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0 2%;
+    border: 1px black;
 }
 
 .photo-container {
-    padding: 5% 5%;
+    justify-content: center;
 }
 
 .title {
