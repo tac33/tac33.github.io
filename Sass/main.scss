@@ -35,6 +35,10 @@ a.nav-link:hover {
     color: $secondary;
 };
 
+.bodygradient {
+    background: linear-gradient(#EEF1FF,#B1B2FF);
+};
+
 @import '../node_modules/bootstrap/scss/mixins';
 @import '../node_modules/bootstrap/scss/utilities';
 @import '../node_modules/bootstrap/scss/helpers';
