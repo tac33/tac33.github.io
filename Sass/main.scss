@@ -1,18 +1,44 @@
-//Custom Variables
-$primary: #019420;
 
-//Import Functions & Variables
-@import '../node_modules/bootstrap/scss/_functions';
-@import '../node_modules/bootstrap/scss/_variables';
+//Import Functions
+@import '../node_modules/bootstrap/scss/functions';
 
-//Addditonal variables
+
+//Variable Overrides
+$custom: #EEF1FF;
+$primary: #B1B2FF;
+$secondary: #AAC4FF;
+$tertiary: #D2DAFF;
+
 $custom-theme-colors: (
-    "night-slash": #B40FF3,
-    "testing": yellow,
-    "One-more": #4F69F0
+    "custom": $custom,
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary
 );
 
-$theme-colors: map-merge($custom-theme-colors, $theme-colors); // aggregate maps
+@import '../node_modules/bootstrap/scss/variables';
+
+// Maps to make colors show
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+@import '../node_modules/bootstrap/scss/maps';
+
+// Utility maps to make colors show
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text: map-merge($utilities-text, $utilities-colors);
+$utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text");
+$utilities-bg: map-merge($utilities-bg, $utilities-colors);
+$utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg");
+
+a.nav-link:hover {
+    color: $secondary;
+};
+
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/helpers';
+@import '../node_modules/bootstrap/scss/utilities/api';
 
 //Import Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
