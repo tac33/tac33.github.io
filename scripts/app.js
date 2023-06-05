@@ -15,7 +15,7 @@ function timeOut(x) {
 async function charTyper(x){
     for(i = 0; i < x.length; i++){
         hello.textContent += x[i];
-        await timeOut(250);
+        await timeOut(500);
     }
 }
 

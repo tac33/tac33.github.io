@@ -16,6 +16,10 @@ $custom-theme-colors: (
     "tertiary": $tertiary
 );
 
+body {
+    font-family: 'Martian Mono', monospace !important;
+}
+
 @import '../node_modules/bootstrap/scss/variables';
 
 // Maps to make colors show
@@ -42,6 +46,14 @@ a.nav-link:hover {
 .circle {
     border-radius: 50%;
     background-color: $tertiary;
+};
+
+.progress-label {
+    margin-right: 5px;
+};
+
+ul {
+    text-decoration: wavy;
 };
 
 @import '../node_modules/bootstrap/scss/mixins';

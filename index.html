@@ -31,8 +31,8 @@
           <div class="navbar-nav">
             <a class="nav-link px-4" href="#about">About</a>
             <a class="nav-link px-4" href="#portfolio">Portfolio</a>
-            <a class="nav-link px-4" href="#resume">Resume</a>
-            <a class="nav-link px-4" href="#contact">Contact</a>
+            <a class="nav-link px-4" href="/images/TyreseCollins_Tech_Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-link px-4" href="#contactme" data-bs-toggle="modal" data-bs-target="#contactme">Connect</a>
           </div>
         </div>
       </div>
@@ -72,26 +72,41 @@
               </div>
             </div>
           </div>
-
+          <!--Skills-->
           <div class="col-lg-6">
             <h3 class="text-center">Skills</h3>
             <div class="hstack gap-2">
               <div class="vr"></div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS/SCSS</li>
-                    <li>JavaScript</li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                  </ul>
-                </div>
+              <div class="container">
+                <h5 class="progress-label text-center">HTML</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5 class="progress-label text-center">CSS</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5 class="progress-label text-center">JavaScript</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5 class="progress-label text-center">Java</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5 class="progress-label text-center">C#</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5 class="progress-label text-center">Python</h5>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
               </div>
             </div>
           </div>
@@ -111,12 +126,12 @@
           <div class="card">
             <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Tic Tac Toe GUI</h5>
+            <h5 class="card-title">Tic-Tac-Toe GUI</h5>
             <h6 class="card-subtitle">Java</h6>
             <p class="card-text text-center">
               This is a Java project I started to get myself familiar with Java's GUI library.
-              It's a fairly simple tic tac toe, that i would like to expand further with localhost networking,
-              so that it can be played by two player's over the internet.
+              It's a fairly simple tic-tac-toe GUI, that uses a grid of labels to place and X or O
+              on each label depending on player turn.
             </p>
             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
           </div>
@@ -165,53 +180,30 @@
       </div>
     </section>
 
-    <!--Contact Me-->
-    <section id="contact" class="container-fluid py-5">
-      <div>
-        <h2 class="text-center">Contact</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum impedit, reprehenderit aut aperiam
-            necessitatibus voluptatem, facere ullam dolore qui, esse deleniti animi blanditiis eveniet illo hic
-            inventore temporibus error est. Atque dignissimos ex iure est magnam quas fugiat et voluptatum!</p>
-        </div>
-      </div>
-
-    </section>
-
     <!--Modal Template-->
-    <div class="modal fade" id="" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal fade" id="contactme" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="contactLabel">Modal title</h5>
+            <h5 class="modal-title" id="contactLabel">Connect with me!</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p class="lead">Hello!</p>
-            <form>
+            <p class="lead">Connect with me on the following platforms!</p>
+            <div class="container">
               <div class="mb-3">
-                  <label for="first-name" class="col-form-label">First Name: </label>
-                  <input type="text" class="form-control" id="first-name">
+                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
+                <label for="first-name" class="col-form-label">Github</label>
               </div>
               <div class="mb-3">
-                  <label for="last-name" class="col-form-label">Last Name: </label>
-                  <input type="text" class="form-control" id="last-name">
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <label for="first-name" class="col-form-label">Instagram</label>
               </div>
               <div class="mb-3">
-                  <label for="phone" class="col-form-label">Phone: </label>
-                  <input type="text" class="form-control" id="phone">
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <label for="first-name" class="col-form-label">Twitter</label>
               </div>
-              <div class="mb-3">
-                  <label for="email" class="col-form-label">Email: </label>
-                  <input type="text" class="form-control" id="email">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
