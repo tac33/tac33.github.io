@@ -39,18 +39,18 @@
     </nav>
 
     <!-- Main Content-->
-    <section class="container-fluid py-3">
+    <section class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 text-center">
-          <h1 class="mt-5 pt-5"><mark>Hello</mark>, I am Tyrese Collins</h1>
+        <div class="col-lg-8 text-center py-5">
+          <h1 class="mt-5 pt-5"><mark></mark>, I am Tyrese Collins</h1>
           <p>Thank you for visiting my website. Please explore the site to get to know
             a little bit about me and the things I have been working on. If you have any inquiries feel
             free to contact me!
           </p>
-          <button class="btn btn-custom">Contact Me</button>
+          <a href="mailto:collins.tyrese99@gmail.com" class="btn btn-custom">Contact Me</a>
         </div>
-        <div class="col-lg-4 text-center pt-2">
-          <img class="img-fluid" src="/images/ShowcaseSelfie.png" alt="Profile Picture" style="border-radius: 15px;">
+        <div class="col-lg-4 bg-custom text-center circle">
+          <img class="img-fluid rounded-circle" src="/images/meCropped.png" alt="Profile Picture" style="border-radius: 15px;">
         </div>
       </div>
     </section>
@@ -61,21 +61,39 @@
         <div class="row pt-5">
           <div class="col-lg-6">
             <h2 class="text-center">About Me</h2>
-            <p>Hi! My name is Tyrese Collins. I am a new software developer based in New York who is interested in creating and designing
-              content on the internet. I am currently working on my degree in informatics concentrated in software developement
-               from SUNY University at Albany.
-            </p>
-            <p>
-              There is a little more about me here!
-            </p>
+            <div class="hstack gap-2">
+              <div class="vr"></div>
+              <div class="container">
+                <p>Hi! My name is Tyrese Collins. I am a new software developer based in New York who is interested in creating and designing
+                  content on the internet. I am currently working on my degree in informatics concentrated in software developement
+                   from SUNY University at Albany.
+                </p>
+                <p>More to go here soon.</p>
+              </div>
+            </div>
           </div>
+
           <div class="col-lg-6">
             <h3 class="text-center">Skills</h3>
-            <p>Proficiency in:</p>
-            <p>Object Oriented Languages: Java, C#</p>
-            <p>Scripting Languages: Python</p>
-            <p>Web Development: HTML, CSS, JavaScript</p>
-            <p>Frameworks: Bootstrap</p>
+            <div class="hstack gap-2">
+              <div class="vr"></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS/SCSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -93,9 +111,13 @@
           <div class="card">
             <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <h6 class="card-subtitle">HTML CSS JavaScript</h6>
-            <p class="card-text">Example of what this project is</p>
+            <h5 class="card-title">Tic Tac Toe GUI</h5>
+            <h6 class="card-subtitle">Java</h6>
+            <p class="card-text text-center">
+              This is a Java project I started to get myself familiar with Java's GUI library.
+              It's a fairly simple tic tac toe, that i would like to expand further with localhost networking,
+              so that it can be played by two player's over the internet.
+            </p>
             <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
           </div>
           </div>
@@ -158,6 +180,43 @@
 
     </section>
 
+    <!--Modal Template-->
+    <div class="modal fade" id="" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Hello!</p>
+            <form>
+              <div class="mb-3">
+                  <label for="first-name" class="col-form-label">First Name: </label>
+                  <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                  <label for="last-name" class="col-form-label">Last Name: </label>
+                  <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="mb-3">
+                  <label for="phone" class="col-form-label">Phone: </label>
+                  <input type="text" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="col-form-label">Email: </label>
+                  <input type="text" class="form-control" id="email">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="position-relative text-center pt-4">
       <div class="container">
         <p class="lead">Copyright &copy 2023 Tyrese Collins</p>
@@ -171,14 +230,19 @@
 <!--TO DO:
 
 Make Button Hover darker.
+Edit background of the image.
 Find a nice font.
 Finish portfolio section
+- Add a hover effect to cards.
 Finish About me Section
-- Make skills look nicer, bolds and maybe some colors.
+- Make skills look nicer, bolds and maybe some colors
 Finish Contact Me Section
 Add JavaScript Functionality
+Make Website more Dynamic with JavaScript
   
 -->
 
+<!--Scripts-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="scripts/app.js"></script>

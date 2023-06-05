@@ -39,6 +39,11 @@ a.nav-link:hover {
     background: linear-gradient(#EEF1FF,#B1B2FF);
 };
 
+.circle {
+    border-radius: 50%;
+    background-color: $tertiary;
+};
+
 @import '../node_modules/bootstrap/scss/mixins';
 @import '../node_modules/bootstrap/scss/utilities';
 @import '../node_modules/bootstrap/scss/helpers';
