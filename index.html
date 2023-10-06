@@ -1,237 +1,32 @@
-<!-- Developed by Tyrese Collins-->
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-  <title>Tyrese Collins Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyrese Collins Portfolio</title>
 </head>
-
 <body>
-  <div class="container-fluid px-4 bodygradient">
+    <div class="wrapper">
+        <header>
+            <div class="logo">TC</div>
+            <nav>
+                <a href="" class="nav-item">Home</a>
+                <a href="" class="nav-item">Portfolio</a>
+                <a href="" class="nav-item">About</a>
+                <a href="" class="nav-item">Experience</a>
+            </nav>
+        </header>
 
-    <!--Navigation Menu-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand">Ty</a>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-link px-4" href="#about">About</a>
-            <a class="nav-link px-4" href="#portfolio">Portfolio</a>
-            <a class="nav-link px-4" href="/images/TyreseCollins_Tech_Resume.pdf" target="_blank">Resume</a>
-            <a class="nav-link px-4" href="#contactme" data-bs-toggle="modal" data-bs-target="#contactme">Connect</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Main Content-->
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 text-center py-5">
-          <h1 class="mt-5 pt-5"><mark></mark>, I am Tyrese Collins</h1>
-          <p>Thank you for visiting my website. Please explore the site to get to know
-            a little bit about me and the things I have been working on. If you have any inquiries feel
-            free to contact me!
-          </p>
-          <a href="mailto:collins.tyrese99@gmail.com" class="btn btn-custom">Contact Me</a>
-        </div>
-        <div class="col-lg-4 bg-custom text-center circle">
-          <img class="img-fluid rounded-circle" src="/images/meCropped.png" alt="Profile Picture" style="border-radius: 15px;">
-        </div>
-      </div>
-    </section>
-
-    <!--About Me-->
-    <section id="about" class="container-fluid py-5">
-      <div>
-        <div class="row pt-5">
-          <div class="col-lg-6">
-            <h2 class="text-center">About Me</h2>
-            <div class="hstack gap-2">
-              <div class="vr"></div>
-              <div class="container">
-                <p>Hi! My name is Tyrese Collins. I am a new software developer based in New York who is interested in creating and designing
-                  content on the internet. I am currently working on my degree in informatics concentrated in software developement
-                   from SUNY University at Albany.
-                </p>
-                <p>More to go here soon.</p>
-              </div>
-            </div>
-          </div>
-          <!--Skills-->
-          <div class="col-lg-6">
-            <h3 class="text-center">Skills</h3>
-            <div class="hstack gap-2">
-              <div class="vr"></div>
-              <div class="container">
-                <h5 class="progress-label text-center">HTML</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <h5 class="progress-label text-center">CSS</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <h5 class="progress-label text-center">JavaScript</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <h5 class="progress-label text-center">Java</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <h5 class="progress-label text-center">C#</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <h5 class="progress-label text-center">Python</h5>
-                    <div class="progress">
-                      <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Portfolio-->
-    <section id="portfolio" class="container py-5">
-      <div class="">
-        <h2 class="text-center">Portfolio</h2>
-      </div>
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-
-        <!--Card 1-->
-        <div class="col">
-          <div class="card">
-            <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Tic-Tac-Toe GUI</h5>
-            <h6 class="card-subtitle">Java</h6>
-            <p class="card-text text-center">
-              This is a Java project I started to get myself familiar with Java's GUI library.
-              It's a fairly simple tic-tac-toe GUI, that uses a grid of labels to place and X or O
-              on each label depending on player turn.
-            </p>
-            <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
-          </div>
-          </div>
+        <div class="main">
+            <section class="about"></section>
+            <section class="experience"></section>
+            <section class="Portfolio"></section>
         </div>
 
-        <!--Card 2-->
-        <div class="col">
-          <div class="card">
-            <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Youtube Music Profile</h5>
-            <h6 class="card-subtitle">HTML CSS JavaScript</h6>
-            <p class="card-text">Example of what this project is</p>
-            <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
-          </div>
-          </div>
-        </div>
-        
-        <!--Card 3-->
-        <div class="col">
-          <div class="card">
-            <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <h6 class="card-subtitle">HTML CSS JavaScript</h6>
-            <p class="card-text">Example of what this project is</p>
-            <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
-          </div>
-          </div>
-        </div>
+        <footer>
+            <div>Tyrese Collins 2023</div>
+        </footer>
 
-        <!--Card 4-->
-        <div class="col">
-          <div class="card">
-            <img src="https://placehold.co/300x200" alt="Placeholder" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Project 4</h5>
-            <h6 class="card-subtitle">HTML CSS JavaScript</h6>
-            <p class="card-text">Example of what this project is</p>
-            <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
-            <a href="#"><i class="bi bi- text-dark mx-1"></i></a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Modal Template-->
-    <div class="modal fade" id="contactme" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactLabel">Connect with me!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Connect with me on the following platforms!</p>
-            <div class="container">
-              <div class="mb-3">
-                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
-                <label for="first-name" class="col-form-label">Github</label>
-              </div>
-              <div class="mb-3">
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <label for="first-name" class="col-form-label">Instagram</label>
-              </div>
-              <div class="mb-3">
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <label for="first-name" class="col-form-label">Twitter</label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <footer class="position-relative text-center pt-4">
-      <div class="container">
-        <p class="lead">Copyright &copy 2023 Tyrese Collins</p>
-        <a href="#" class="fixed-end text-tertiary"><i class="bi bi-arrow-up-circle h1"></i></a>
-      </div>
-    </footer>
 </body>
-
 </html>
-
-<!--TO DO:
-
-Make Button Hover darker.
-Edit background of the image.
-Finish portfolio section
-- Add a hover effect to cards.
-Finish About me Section
-Add JavaScript Functionality
--Make Website more Dynamic with JavaScript
-  
--->
-
-<!--Scripts-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<script src="scripts/app.js"></script>
