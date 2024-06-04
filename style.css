@@ -1,0 +1,128 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+.hero-img {
+    height: 800px;
+    width: 800px;
+}
+/* Header */
+header {
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #568ad0;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    gap: 16px;
+    font-size: 2em;
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    color: #568ad0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+li a:hover {
+    background-color: silver;
+    color: black;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 2em;
+}
+
+/* about */
+.about-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px black;
+}
+
+.about-content {
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 3px;
+}
+
+.about-text {
+    width: 800px;
+    height: 500px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.about-text h2 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.icon-container {
+    display: flex;
+    gap: 24px;
+}
+
+/* Experience */
+.experience-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: solid 2px black;
+}
+
+
+/* Projects */
+.projects-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: solid 2px black;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
