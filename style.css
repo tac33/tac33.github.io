@@ -76,7 +76,7 @@ li a:hover {
     border: 2px solid black;
     display: flex;
     background-color: white;
-    box-shadow: 5px 3px;
+    box-shadow: 5px 5px 10px #568ad0;
 }
 
 .about-text {
@@ -97,6 +97,24 @@ li a:hover {
 .icon-container {
     display: flex;
     gap: 24px;
+}
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+.skill {
+    white-space: nowrap;
+    clear: both;
+    float: left;
+    background-color: #568ad0;
+    padding: 8px;
+    color: white;
+    font-weight: 700;
+    border-radius: 25px;
 }
 
 .education-experience {
